@@ -1,0 +1,6 @@
+bin/influxd
+bin/telemetryd
+etc/rc.d/influxd
+@dir(%%INFLUXD_USER%%, %%INFLUXD_GROUP%%,0750) /var/db/influxdb2
+@dir(%%INFLUXD_USER%%, %%INFLUXD_GROUP%%,0750) /var/log/influxdb2
+@dir(%%INFLUXD_USER%%, %%INFLUXD_GROUP%%,0750) /var/run/influxdb2

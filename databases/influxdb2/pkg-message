@@ -1,0 +1,8 @@
+[
+{ type: install
+  message: <<EOM
+When updating from InfluxDB v1 read the docs on how to upgrade here:
+https://docs.influxdata.com/influxdb/v2.0/upgrade/v1-to-v2/automatic-upgrade/
+EOM
+}
+]
