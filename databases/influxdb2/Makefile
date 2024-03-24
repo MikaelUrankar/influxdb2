@@ -9,8 +9,8 @@ COMMENT=	Open-source distributed time series database
 LICENSE=	MIT
 LICENSE_FILE=	${WRKSRC}/LICENSE
 
-ONLY_FOR_ARCHS=	aarch64 amd64
-ONLY_FOR_ARCHS_REASON=	Only supported on 64-bit platforms where lang/go is available
+ONLY_FOR_ARCHS=	aarch64 amd64 riscv64
+ONLY_FOR_ARCHS_REASON= Only supported on 64-bit platforms where lang/go is available
 
 BUILD_DEPENDS=	cargo:lang/rust \
 		influx-pkg-config:devel/influx-pkg-config
