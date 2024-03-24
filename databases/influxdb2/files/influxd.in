@@ -11,7 +11,7 @@
 # influxd_enable (bool):	Set to YES to enable influxd
 #				Default: NO
 # influxd_conf (str):		influxd configuration file
-#				Default: ${PREFIX}/etc/influxd.conf
+#				Default: ${PREFIX}/etc/influxd.toml
 # influxd_user (str):		influxd daemon user
 #				Default: %%INFLUXD_USER%%
 # influxd_group (str):		influxd daemon group
@@ -37,7 +37,7 @@ load_rc_config $name
 : ${influxd_flags:=""}
 : ${influxd_facility:="daemon"}
 : ${influxd_priority:="info"}
-: ${influxd_conf:="%%PREFIX%%/etc/${name}.conf"}
+: ${influxd_conf:="%%PREFIX%%/etc/${name}.toml"}
 : ${influxd_pid:="%%INFLUXD_PIDDIR%%/${name}.pid"}
 : ${influxd_daemonflags:="-S -s ${influxd_priority} -l ${influxd_facility}"}
 
