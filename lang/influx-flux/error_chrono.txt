@@ -1,0 +1,15 @@
+error: use of deprecated associated function `chrono::DateTime::<Tz>::from_utc`: Use TimeZone::from_utc_datetime() or DateTime::from_naive_utc_and_offset instead
+   --> flux-core/src/parser/strconv.rs:147:30
+    |
+147 |                 Ok(DateTime::from_utc(datetime, offset))
+    |                              ^^^^^^^^
+    |
+note: the lint level is defined here
+   --> flux-core/src/lib.rs:1:38
+    |
+1   | #![cfg_attr(feature = "strict", deny(warnings, missing_docs))]
+    |                                      ^^^^^^^^
+    = note: `#[deny(deprecated)]` implied by `#[deny(warnings)]`
+
+error: could not compile `flux-core` (lib) due to 1 previous error
+

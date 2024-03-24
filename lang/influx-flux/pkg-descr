@@ -1,0 +1,5 @@
+Flux is a lightweight scripting language for
+querying databases (like InfluxDB) and working with data.
+It's part of InfluxDB but can be run independently of those.
+
+WWW: https://influxdata.com/
