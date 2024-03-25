@@ -6,6 +6,7 @@ PKGNAMEPREFIX=	influx-
 
 MAINTAINER=	driesm.michiels@gmail.com
 COMMENT=	Lightweight scripting language for querying databases (influxDB 1 & 2)
+WWW=		https://influxdata.com/
 
 LICENSE=	MIT
 LICENSE_FILE=	${WRKSRC}/LICENSE
@@ -22,5 +23,7 @@ BINARY_ALIAS=	pkg-config=influx-pkg-config
 CARGO_BUILD=	NO
 CARGO_INSTALL=	NO
 CARGO_CARGOTOML=${WRKSRC}/libflux/Cargo.toml
+
+PLIST_FILES=	bin/flux
 
 .include <bsd.port.mk>
