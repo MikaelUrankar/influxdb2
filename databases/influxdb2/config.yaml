@@ -1,0 +1,4 @@
+bolt-path: /var/db/influxdb/influxd.bolt
+engine-path: /var/db/influxdb/engine
+http-bind-address: ":8086"
+reporting-disabled: true
