@@ -1,5 +1,14 @@
 --- GNUmakefile.orig	2024-03-24 18:28:28.265995000 +0100
 +++ GNUmakefile	2024-03-24 18:28:35.964253000 +0100
+@@ -27,7 +27,7 @@ GO_TEST_ARGS := -tags '$(COMMON_TAGS),$(GO_TEST_TAGS)'
+ COMMON_TAGS := sqlite_foreign_keys,sqlite_json
+ 
+ GO_TEST_ARGS := -tags '$(COMMON_TAGS),$(GO_TEST_TAGS)'
+-GO_BUILD_ARGS := -tags '$(COMMON_TAGS),$(GO_BUILD_TAGS)'
++GO_BUILD_ARGS := -tags '$(COMMON_TAGS),$(GO_BUILD_TAGS)' -buildvcs=false
+ 
+ # Use default flags, but allow adding -gcflags "..." if desired. Eg, for debug
+ # builds, may want to use GCFLAGS="all=-N -l" in the build environment.
 @@ -85,12 +85,6 @@ influxd: bin/$(GOOS)/influxd
  
  influxd: bin/$(GOOS)/influxd
